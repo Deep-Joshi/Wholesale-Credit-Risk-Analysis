@@ -1,0 +1,21 @@
+select{
+	color:black;
+	background:rgba(0,0,0,0.5);
+	outline:none;
+	border-radius: 1px;
+	border:1px solid rgba(240,220,156,1.0); 
+	color: white;
+}
+
+select:focus
+{
+
+	outline:rgba(0,0,0,0.5);
+	background:rgba(0,0,0,0.3);
+}
+select::-webkit-select-placeholder
+{
+color:white;
+}
+
+
