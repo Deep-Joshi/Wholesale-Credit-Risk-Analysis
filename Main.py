@@ -75,7 +75,12 @@ def result():
 		
 		
 		testing = pd.DataFrame([x3,x4,x5,x6,x7,x8,x9,x10,x11,x12,cre_construction,cre_permanent,b,c,t982,x456,y237,z009,yes])
+		
+		with open('stdScaler','rb') as s:
+			scalar = pickle.load(s)
+		
 		testing = testing.values.reshape(1,19)
+		testing = scalar.transform(testing)
 		
 		with open('model_pickle_optimized_XGBoost','rb') as f:
 			mp = pickle.load(f)
