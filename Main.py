@@ -1,4 +1,5 @@
 from flask import Flask, render_template, request
+# Import numpy and pandas
 import numpy as np
 import pandas as pd
 
