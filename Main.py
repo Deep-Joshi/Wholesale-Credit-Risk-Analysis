@@ -1,6 +1,8 @@
 from flask import Flask, render_template, request
 # Import numpy and pandas
 import numpy as np
+
+# Import pandas
 import pandas as pd
 
 # Importing pickle
